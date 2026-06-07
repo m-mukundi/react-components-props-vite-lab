@@ -1,12 +1,12 @@
 /* eslint-disable react/prop-types */
-function Article({ post }) {
+function Article({ title, date = "January 1, 1970", preview }) {
 	return (
 		<div>
 			<article>
-				<h3>{post.title}</h3>
+				<h3>{title}</h3>
 			</article>
-			<small>{post.date}</small>
-			<p>{post.preview}</p>
+			<small>{date}</small>
+			<p>{preview}</p>
 		</div>
 	);
 }
